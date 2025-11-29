@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horarios - Centro Especializado en Lenguas (CEL)</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header y Navegación -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1><i class="fas fa-language"></i> CEL</h1>
+                    <span>Centro Especializado en Lenguas</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cursos.html" class="nav-link">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="servicios.html" class="nav-link">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="horarios.html" class="nav-link active">Horarios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="mision.html" class="nav-link">Misión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="vision.html" class="nav-link">Visión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactos.html" class="nav-link">Contactos</a>
+                    </li>
+                </ul>
+                <div class="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Horarios de Clases</h1>
+            <p>Encuentra el horario perfecto que se adapte a tu rutina diaria</p>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section class="schedule">
+        <div class="container">
+            <!-- Schedule Filters -->
+            <div class="schedule-filters">
+                <h2>Selecciona el idioma que te interesa</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-language="all">Todos</button>
+                    <button class="filter-btn" data-language="ingles">Inglés</button>
+                    <button class="filter-btn" data-language="frances">Francés</button>
+                    <button class="filter-btn" data-language="aleman">Alemán</button>
+                    <button class="filter-btn" data-language="italiano">Italiano</button>
+                    <button class="filter-btn" data-language="portugues">Portugués</button>
+                    <button class="filter-btn" data-language="japones">Japonés</button>
+                </div>
+            </div>
+
+            <!-- Schedule Tables -->
+            <div class="schedule-tables">
+                <!-- Inglés -->
+                <div class="schedule-table" data-language="ingles">
+                    <h3><i class="fas fa-flag-usa"></i> Inglés</h3>
+                    <div class="table-responsive">
+                        <table class="schedule-table-content">
+                            <thead>
+                                <tr>
+                                    <th>Nivel</th>
+                                    <th>Lunes</th>
+                                    <th>Miércoles</th>
+                                    <th>Viernes</th>
+                                    <th>Sábado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Básico A1</strong></td>
+                                    <td>8:00 - 10:00</td>
+                                    <td>8:00 - 10:00</td>
+                                    <td>8:00 - 10:00</td>
+                                    <td>9:00 - 12:00</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Básico A2</strong></td>
+                                    <td>10:00 - 12:00</td>
+                                    <td>10:00 - 12:00</td>
+                                    <td>10:00 - 12:00</td>
+                                    <td>9:00 - 12:00</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Intermedio B1</strong></td>
+                                    <td>14:00 - 16:00</td>
+                                    <td>14:00 - 16:00</td>
+                                    <td>14:00 - 16:00</td>
+                                    <td>13:00 - 16:00</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Intermedio B2</strong></td>
+                                    <td>16:00 - 18:00</td>
+                                    <td>16:00 - 18:00</td>
+                                    <td>16:00 - 18:00</td>
+                                    <td>13:00 - 16:00</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Avanzado C1</strong></td>
+                                    <td>18:00 - 20:00</td>
+                                    <td>18:00 - 20:00</td>
+                                    <td>18:00 - 20:00</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Avanzado C2</strong></td>
+                                    <td>18:00 - 20:00</td>
+                                    <td>18:00 - 20:00</td>
+                                    <td>18:00 - 20:00</td>
+                                    <td>-</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Francés -->
+                <div class="schedule-table" data-language="frances">
+                    <h3><i class="fas fa-flag"></i> Francés</h3>
+                    <div class="table-responsive">
+                        <table class="schedule-table-content">
+                            <thead>
+                                <tr>
+                                    <th>Nivel</th>
+                                    <th>Martes</th>
+                                    <th>Jueves</th>
+                                    <th>Sábado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Básico A1</strong></td>
+                                    <td>8:00 - 10:00</td>
+                                    <td>8:00 - 10:00</td>
+                                    <td>9:00 - 12:00</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Básico A2</strong></td>
+                                    <td>10:00 - 12:00</td>
+                                    <td>10:00 - 12:00</td>
+                                    <td>9:00 - 12:00</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Intermedio B1</strong></td>
+                                    <td>14:00 - 16:00</td>
+                                    <td>14:00 - 16:00</td>
+                                    <td>13:00 - 16:00</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Intermedio B2</strong></td>
+                                    <td>16:00 - 18:00</td>
+                                    <td>16:00 - 18:00</td>
+                                    <td>13:00 - 16:00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Alemán -->
+                <div class="schedule-table" data-language="aleman">
+                    <h3><i class="fas fa-flag"></i> Alemán</h3>
+                    <div class="table-responsive">
+                        <table class="schedule-table-content">
+                            <thead>
+                                <tr>
+                                    <th>Nivel</th>
+                                    <th>Lunes</th>
+                                    <th>Miércoles</th>
+                                    <th>Viernes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Básico A1</strong></td>
+                                    <td>18:00 - 20:00</td>
+                                    <td>18:00 - 20:00</td>
+                                    <td>18:00 - 20:00</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Básico A2</strong></td>
+                                    <td>18:00 - 20:00</td>
+                                    <td>18:00 - 20:00</td>
+                                    <td>18:00 - 20:00</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Intermedio B1</strong></td>
+                                    <td>18:00 - 20:00</td>
+                                    <td>18:00 - 20:00</td>
+                                    <td>18:00 - 20:00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Italiano -->
+                <div class="schedule-table" data-language="italiano">
+                    <h3><i class="fas fa-flag"></i> Italiano</h3>
+                    <div class="table-responsive">
+                        <table class="schedule-table-content">
+                            <thead>
+                                <tr>
+                                    <th>Nivel</th>
+                                    <th>Martes</th>
+                                    <th>Jueves</th>
+                                    <th>Sábado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Básico A1</strong></td>
+                                    <td>18:00 - 20:00</td>
+                                    <td>18:00 - 20:00</td>
+                                    <td>9:00 - 12:00</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Intermedio B1</strong></td>
+                                    <td>18:00 - 20:00</td>
+                                    <td>18:00 - 20:00</td>
+                                    <td>13:00 - 16:00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Portugués -->
+                <div class="schedule-table" data-language="portugues">
+                    <h3><i class="fas fa-flag"></i> Portugués</h3>
+                    <div class="table-responsive">
+                        <table class="schedule-table-content">
+                            <thead>
+                                <tr>
+                                    <th>Nivel</th>
+                                    <th>Lunes</th>
+                                    <th>Miércoles</th>
+                                    <th>Sábado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Básico A1</strong></td>
+                                    <td>18:00 - 20:00</td>
+                                    <td>18:00 - 20:00</td>
+                                    <td>9:00 - 12:00</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Intermedio B1</strong></td>
+                                    <td>18:00 - 20:00</td>
+                                    <td>18:00 - 20:00</td>
+                                    <td>13:00 - 16:00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Japonés -->
+                <div class="schedule-table" data-language="japones">
+                    <h3><i class="fas fa-flag"></i> Japonés</h3>
+                    <div class="table-responsive">
+                        <table class="schedule-table-content">
+                            <thead>
+                                <tr>
+                                    <th>Nivel</th>
+                                    <th>Martes</th>
+                                    <th>Jueves</th>
+                                    <th>Sábado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Básico</strong></td>
+                                    <td>18:00 - 20:00</td>
+                                    <td>18:00 - 20:00</td>
+                                    <td>9:00 - 12:00</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Intermedio</strong></td>
+                                    <td>18:00 - 20:00</td>
+                                    <td>18:00 - 20:00</td>
+                                    <td>13:00 - 16:00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Information -->
+            <div class="schedule-info">
+                <div class="info-cards">
+                    <div class="info-card">
+                        <i class="fas fa-clock"></i>
+                        <h4>Horarios Flexibles</h4>
+                        <p>Ofrecemos horarios matutinos, vespertinos y de fin de semana para adaptarnos a tu rutina.</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h4>Clases Intensivas</h4>
+                        <p>Programas intensivos de 4 semanas disponibles durante vacaciones y temporadas especiales.</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-laptop"></i>
+                        <h4>Modalidad Virtual</h4>
+                        <p>También ofrecemos clases virtuales con horarios flexibles y grabaciones disponibles.</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-user-friends"></i>
+                        <h4>Clases Particulares</h4>
+                        <p>Horarios completamente personalizados para clases individuales según tu disponibilidad.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="cta-section">
+                <h2>¿No encuentras el horario ideal?</h2>
+                <p>Contáctanos y crearemos un horario personalizado que se adapte a tus necesidades</p>
+                <div class="cta-buttons">
+                    <a href="contactos.html" class="btn btn-primary">Solicitar Horario</a>
+                    <a href="servicios.html" class="btn btn-secondary">Ver Servicios</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-language"></i> CEL</h3>
+                    <p>Centro Especializado en Lenguas</p>
+                    <p>Formando ciudadanos globales a través del aprendizaje de idiomas.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="cursos.html">Cursos</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="horarios.html">Horarios</a></li>
+                        <li><a href="contactos.html">Contactos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Información</h4>
+                    <ul>
+                        <li><a href="mision.html">Misión</a></li>
+                        <li><a href="vision.html">Visión</a></li>
+                        <li><a href="contactos.html">Ubicación</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-phone"></i> +57 (1) 234-5678</p>
+                    <p><i class="fas fa-envelope"></i> info@cel.edu.co</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Bogotá, Colombia</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Centro Especializado en Lenguas (CEL). Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/schedule.js"></script>
+</body>
+</html>

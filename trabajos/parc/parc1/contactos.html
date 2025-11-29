@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos - Centro Especializado en Lenguas (CEL)</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header y Navegación -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1><i class="fas fa-language"></i> CEL</h1>
+                    <span>Centro Especializado en Lenguas</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cursos.html" class="nav-link">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="servicios.html" class="nav-link">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="horarios.html" class="nav-link">Horarios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="mision.html" class="nav-link">Misión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="vision.html" class="nav-link">Visión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactos.html" class="nav-link active">Contactos</a>
+                    </li>
+                </ul>
+                <div class="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contáctanos</h1>
+            <p>Estamos aquí para ayudarte en tu camino hacia el dominio de idiomas</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h2>Información de Contacto</h2>
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>Ubicación</h3>
+                                <p>Carrera 15 #93-47<br>
+                                Bogotá, Colombia<br>
+                                Código Postal: 110111</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>Teléfonos</h3>
+                                <p>Fijo: +57 (1) 234-5678<br>
+                                Móvil: +57 300 123-4567<br>
+                                WhatsApp: +57 300 123-4567</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>Correos Electrónicos</h3>
+                                <p>General: info@cel.edu.co<br>
+                                Admisiones: admisiones@cel.edu.co<br>
+                                Soporte: soporte@cel.edu.co</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>Horarios de Atención</h3>
+                                <p>Lunes a Viernes: 7:00 AM - 8:00 PM<br>
+                                Sábados: 8:00 AM - 6:00 PM<br>
+                                Domingos: 9:00 AM - 2:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h2>Envíanos un Mensaje</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo *</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="idioma">Idioma de Interés</label>
+                            <select id="idioma" name="idioma">
+                                <option value="">Selecciona un idioma</option>
+                                <option value="ingles">Inglés</option>
+                                <option value="frances">Francés</option>
+                                <option value="aleman">Alemán</option>
+                                <option value="italiano">Italiano</option>
+                                <option value="portugues">Portugués</option>
+                                <option value="japones">Japonés</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="nivel">Nivel de Conocimiento</label>
+                            <select id="nivel" name="nivel">
+                                <option value="">Selecciona tu nivel</option>
+                                <option value="principiante">Principiante (A1)</option>
+                                <option value="basico">Básico (A2)</option>
+                                <option value="intermedio">Intermedio (B1-B2)</option>
+                                <option value="avanzado">Avanzado (C1-C2)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje *</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Cuéntanos cómo podemos ayudarte..."></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="acepto" name="acepto" required>
+                                <span class="checkmark"></span>
+                                Acepto recibir información sobre cursos y promociones
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Map Section -->
+            <div class="map-section">
+                <h2>Nuestra Ubicación</h2>
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <p>Mapa Interactivo</p>
+                        <small>Carrera 15 #93-47, Bogotá, Colombia</small>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- FAQ Section -->
+            <div class="faq-section">
+                <h2>Preguntas Frecuentes</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>¿Cuáles son los requisitos para inscribirse?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Para inscribirte solo necesitas presentar tu documento de identidad, realizar una prueba de nivel (si aplica) y completar el formulario de inscripción. No se requiere experiencia previa para los cursos básicos.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>¿Ofrecen clases virtuales?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Sí, ofrecemos clases virtuales en tiempo real con profesores certificados. Utilizamos nuestra plataforma propia que incluye material interactivo, grabaciones de clases y seguimiento personalizado.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>¿Qué certificaciones otorgan?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Otorgamos certificados reconocidos internacionalmente según el idioma: TOEFL/IELTS para inglés, DELF/DALF para francés, Goethe-Zertifikat para alemán, y otros certificados oficiales según corresponda.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>¿Hay descuentos disponibles?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Sí, ofrecemos descuentos para estudiantes, grupos familiares, pagos anticipados y programas corporativos. También tenemos promociones especiales durante ciertas épocas del año.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-language"></i> CEL</h3>
+                    <p>Centro Especializado en Lenguas</p>
+                    <p>Formando ciudadanos globales a través del aprendizaje de idiomas.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="cursos.html">Cursos</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="horarios.html">Horarios</a></li>
+                        <li><a href="contactos.html">Contactos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Información</h4>
+                    <ul>
+                        <li><a href="mision.html">Misión</a></li>
+                        <li><a href="vision.html">Visión</a></li>
+                        <li><a href="contactos.html">Ubicación</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-phone"></i> +57 (1) 234-5678</p>
+                    <p><i class="fas fa-envelope"></i> info@cel.edu.co</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Bogotá, Colombia</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Centro Especializado en Lenguas (CEL). Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

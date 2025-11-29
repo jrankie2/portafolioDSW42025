@@ -1,0 +1,113 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sistema de Mantenimiento</title>
+  <link rel="stylesheet" href="recursos/css/estilos.css">
+</head>
+<body>
+  <div id="encabezado"></div>
+
+  <main class="contenedor">
+    <div class="hero">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <h1>Bienvenido al Sistema de Mantenimiento</h1>
+          <p>Administra equipos, programa mantenimientos y coordina el trabajo con un flujo visual y simple.</p>
+          <div class="hero-cta">
+            <a class="btn" href="">Nuevo equipo</a>
+            <a class="btn sec" href="">Nuevo mantenimiento</a>
+          </div>
+        </div>
+        <img class="hero-logo" src="recursos/img/logo.png" alt="Logo">
+      </div>
+    </div>
+
+    <div class="grid grid-3" style="margin-bottom:14px">
+      <div class="tarjeta tarjeta-xl tarjeta-hover">
+        <div class="card-icon">
+          <img src="recursos/img/axolot.png" alt="Equipos">
+          <div>
+            <h3>Servicios → Equipos</h3>
+            <p style="margin:6px 0 10px;color:#475569">Alta, edición, búsqueda y eliminación de equipos.</p>
+            <a class="btn" href="">Ir a Equipos</a>
+          </div>
+        </div>
+      </div>
+      <div class="tarjeta tarjeta-xl tarjeta-hover">
+        <div class="card-icon">
+          <img src="recursos/img/sup.png" alt="Mantenimiento">
+          <div>
+            <h3>Mantenimiento</h3>
+            <p style="margin:6px 0 10px;color:#475569">Tablero con arrastrar y soltar para estados.</p>
+            <a class="btn" href="">Ver Tablero</a>
+          </div>
+        </div>
+      </div>
+      <div class="tarjeta tarjeta-xl tarjeta-hover">
+        <div class="card-icon">
+          <img src="recursos/img/calendar.png" alt="Calendario">
+          <div>
+            <h3>Calendario</h3>
+            <p style="margin:6px 0 10px;color:#475569">Vista mensual de tareas programadas.</p>
+            <a class="btn" href=>Abrir Calendario</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Notas / Anuncios -->
+    <div class="tarjeta nota-panel">
+      <h3 class="seccion-titulo">Notas / Anuncios</h3>
+      <?php if (esta_autenticado()): ?>
+      <form method="post" action="" style="margin-bottom:10px">
+        <div class="fila">
+          <div class="col grupo"><label>Título</label><input name="titulo" required maxlength="150"></div>
+        </div>
+        <div class="grupo"><label>Contenido</label><textarea name="contenido" rows="3" required></textarea></div>
+        <input type="hidden" name="csrf_token" value="<?= e(csrf_token()) ?>">
+        <button class="btn" type="submit">Publicar</button>
+      </form>
+      <?php endif; ?>
+
+      <?php if (!empty($notas)): ?>
+        <?php foreach ($notas as $n): ?>
+          <div class="tarjeta" style="margin:8px 0">
+            <div class="muted"><small><?= e($n['creado_en']) ?></small> - por <?= e($n['autor']) ?></div>
+            <div><strong><?= e($n['titulo']) ?></strong></div>
+            <div style="white-space:pre-wrap;word-wrap:break-word;"><?= nl2br(e($n['contenido'])) ?></div>
+          </div>
+        <?php endforeach; ?>
+      <?php else: ?>
+        <div class="muted">No hay notas publicadas.</div>
+      <?php endif; ?>
+    </div>
+  </main>
+
+  <div id="pie"></div>
+
+  <script>
+    async function loadFragment(id, file) {
+      const el = document.getElementById(id);
+      if (!el) return;
+      try {
+        const res = await fetch(file);
+        if (!res.ok) throw new Error(res.statusText);
+        el.innerHTML = await res.text();
+        // Marcar nav activo según la página
+        if (id === 'encabezado') {
+          const path = (location.pathname.split('/').pop() || 'inicio.html').toLowerCase();
+          const active = el.querySelector(`[data-nav][href*="${path.replace('.html','')}"]`);
+          if (active) active.classList.add('activo');
+        }
+      } catch (err) {
+        console.error('No se pudo cargar', file, err);
+      }
+    }
+    loadFragment('encabezado', 'encabezado.html');
+    loadFragment('pie', 'pie.html');
+  </script>
+  <script src="recursos/js/app.js" defer></script>
+</body>
+</html>

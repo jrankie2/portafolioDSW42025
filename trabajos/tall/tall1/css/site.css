@@ -1,0 +1,48 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+body {
+    background-color: #fff;
+}
+
+.btn-unachi-red {
+    background-color: #B22222;
+    color: #fff;
+    border: none;
+}
+
+.btn-unachi-red:hover, .btn-unachi-red:focus {
+    background-color: #8B1A1A;
+    color: #fff;
+}
+
+.btn-unachi-green {
+    background-color: #228B22;
+    color: #fff;
+    border: none;
+}
+
+.btn-unachi-green:hover, .btn-unachi-green:focus {
+    background-color: #176117;
+    color: #fff;
+}
